@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head profile="http://www.w3.org/2005/10/profile">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>David Reeß</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Last Published: Wed Jul 17 2013 15:57:44 GMT+0000 (UTC) -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/webflow.css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <link rel="icon" type="image/x-icon" href="http://david-reess.de/img/favicon.png">
+  </head>
+  <body>
+  <!--
+       XXXXXX,        XXX    `XX      XX XXX  XXXXXX,          XXXXXX`     XXXXXXXX   XXXXXXXX    `XXXX:     `XXXX:    
+       XXXXXXXX      ;XXX'    XX     ,XX XXX  XXXXXXXX         XXXXXXXX`   XXXXXXXX   XXXXXXXX   XXXXXXX`   XXXXXXX`   
+       XX   :XXX     XX.XX    XX,    XX` XXX  XX   :XXX        XX    XXX   XX         XX        .XX   .XX  .XX   .XX   
+       XX     XX`    XX XX    `XX    XX  XXX  XX     XX`       XX     XX   XX         XX        XXX    XX  XXX    XX   
+       XX     .XX   ,XX XX,    XX   :XX  XXX  XX     .XX       XX     XX   XX         XX        ,XXX,      ,XXX,       
+       XX      XX   XX: :XX    XX:  XX`  XXX  XX      XX       XXXXXXXXX   XXXXXXXX   XXXXXXXX   XXXXXX.    XXXXXX.    
+       XX      XX   XX   XX    `XX  XX   XXX  XX      XX       XXXXXXXX    XXXXXXXX   XXXXXXXX    .XXXXXX    .XXXXXX   
+       XX     :XX  `XX   XX`    XX 'XX   XXX  XX     :XX       XX :XXX     XX         XX             ,XXX,      ,XXX,  
+       XX     `XX  XXXXXXXXX    XX XX`   XXX  XX     `XX       XX   XXX    XX         XX        :`     XXX :`     XXX  
+       XX     XX,  XXXXXXXXX    `XXXX    XXX  XX     XX,       XX    XX`   XX         XX        XXX    XX` XXX    XX`  
+       XXXXXXXXX  XXX     XXX    XXXX    XXX  XXXXXXXXX        XX    .XX   XXXXXXXXX  XXXXXXXXX ,XXX  XXX  ,XXX  XXX   
+       XXXXXXXX   XX:     ;XX    XXX.    XXX  XXXXXXXX         XX     XXX  XXXXXXXXX  XXXXXXXXX  XXXXXXX.   XXXXXXX.
+  -->
+  <div class="header">
+    <div class="w-container header">
+      <div class="w-row">
+        <div class="w-col w-col-6 w-col-medium-6">
+          <h1 class="logo">David Reess</h1>
+        </div>
+        <div class="w-col w-col-6 w-col-medium-6 w-clearfix navigation">
+          <a class="navigation-link" href="#projects">Projekte</a>
+          <a class="navigation-link" href="#portfolio">Portfolio</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero">
+    <div class="w-container">
+      <div class="w-row">
+        <div class="w-col w-col-4 w-col-medium-4 w-clearfix hero-image">
+          <img class="showcase-small-image hero-image" src="images/51e6b9845b9b789f3200025a_me.png">
+          </img>
+        </div>
+        <div class="w-col w-col-8 w-col-medium-8 hero-text">
+          <div class="w-container">
+            <p>Hey! Mein Name ist David Reeß. Ich erstelle <b>Websiten</b> und <b>Webanwendungen</b> und liebe es zu <b>Programmieren</b>. Meine Fähigkeiten beinhalten die <b>bedeutendsten Websprachen</b>, <b>vorbildliche Arbeitsweisen</b> und eine gute Portion <b>Webdesign</b>.</p>
+            <p>Wenn Sie gern ein Projekt umsetzen wollen, oder Hilfe benötigen, <b>kontaktieren Sie mich</b>:</p>
+          </div>
+          <div class="w-row hero-icons">
+            <div class="w-col w-col-6 w-clearfix contact-wrapper">
+              <img class="hero-icon" src="images/51e6b9fc656f8da03200022d_email-icon.png" width="32px">
+              </img>
+              <p class="hero-icon-text">queicherius@gmail.com</p>
+            </div>
+            <div class="w-col w-col-6 w-clearfix contact-wrapper">
+              <img class="hero-icon" src="images/51e6ba0b53f3c9402300024e_skype-icon.png" width="32px">
+              </img>
+              <p class="hero-icon-text">queicherius</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="heading-section">
+    <div class="w-container heading-container" id="projects">
+      <h1>Projekte</h1>
+      <p>Projekte, die ohne Aufträge entstanden sind und komplett von mir erstellt wurden</p>
+    </div>
+  </div>
+  <div class="content-section">
+
+    <?php
+
+    $hero_index = false;
+
+    foreach($projects as $key=>$value){
+      if($projects[$key]['hero']){
+        $hero_index = $key;
+        break;
+      }
+    }
+
+    ?>
+
+    <div class="w-hidden-medium w-hidden-small w-hidden-tiny showcase <?php echo strtolower(str_replace(' ', '', $projects[$hero_index]['title'])); ?>">
+      <div class="w-container">
+        <div class="w-row">
+          <div class="w-col w-col-6 w-col-small-6 hero-small-image-wrapper">
+            <img class="showcase-small-image hero-small-image" src="images/<?php echo $projects[$hero_index]['image']; ?>">
+            </img>
+          </div>
+          <div class="w-col w-col-6 w-col-small-6 showcase-description">
+            <h2><?php echo $projects[$hero_index]['title']; ?></h2>
+            <p class="date"><?php echo $projects[$hero_index]['date_parsed']; ?></p>
+            <p><?php echo $projects[$hero_index]['text']; ?></p>
+            <a class="button inverte" href="<?php echo $projects[$hero_index]['link']; ?>">Zum Projekt</a>
+            <p class="used-language"><?php echo $projects[$hero_index]['technology']; ?></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-container responsive-container">
+      <div class="w-row small-projects-2">
+
+      <?php $i = 0; foreach($projects as $project): $i++;?>
+        <div class="w-col w-col-6 w-col-medium-6 project-column <?php echo ($i == 1) ? 'first-small-project' : ''; ?>">
+          <img class="showcase-small-image" src="images/<?php echo $project['image']; ?>">
+          </img>
+          <div class="responsive-row">
+            <h2><?php echo $project['title']; ?></h2>
+            <p class="date"><?php echo $project['date_parsed']; ?></p>
+            <p><?php echo $project['text']; ?></p>
+            <a class="button" href="<?php echo $project['link']; ?>">Zum Projekt</a>
+            <p class="used-language"><?php echo $project['technology']; ?></p>
+          </div>
+        </div>
+
+        <?php 
+
+        $r = $i-1;
+
+        if($i % 2 == 0 && $i != count($projects)){
+
+            echo '<div class="project-clear mobile-clear';
+            echo '"></div>';
+
+          } 
+
+          if($r % 2 == 0 && $r != count($projects)-1 && $r != 0){
+
+            echo '<div class="project-clear desktop-clear';
+            echo '"></div>';
+
+          } 
+
+          ?>
+
+    <?php endforeach; ?>
+      </div>
+    </div>
+  </div>
+    
+  <div class="heading-section">
+    <div class="w-container heading-container" id="portfolio">
+      <h1>Portfolio</h1>
+      <p>Webseiten und Anwendungen die aus Aufträgen entstanden sind, oder von mir verwaltet wurden</p>
+    </div>
+  </div>
+  <div class="content-section">
+
+    <div class="w-container responsive-container">
+      <div class="w-row small-projects-2">
+
+      <?php $i = 0; foreach($portfolio as $project): $i++;?>
+        <div class="w-col w-col-6 w-col-medium-6 project-column">
+          <img class="showcase-small-image" src="images/<?php echo $project['image']; ?>">
+          </img>
+          <div class="responsive-row">
+            <h2><?php echo $project['title']; ?></h2>
+            <p class="date"><?php echo $project['date_parsed']; ?></p>
+            <p><?php echo $project['text']; ?></p>
+            <a class="button" href="<?php echo $project['link']; ?>">Zur Webseite</a>
+            <p class="used-language"><?php echo $project['technology']; ?></p>
+          </div>
+        </div>
+
+        <?php if($i % 2 == 0 && $i != count($projects)){
+
+          echo '</div>
+    </div>
+    <div class="w-container responsive-container">
+      <div class="w-row small-projects-2">';
+
+          } ?>
+
+    <?php endforeach; ?>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-section">
+    <div class="w-container footer">
+      <img class="footer-avatar" src="images/51e5983da3b36f7430000116_awesome_avatar.png" width="20px">
+      </img>
+      <a class="footer-link" href="./impressum">Impressum<br></a>
+    </div>
+  </div>
+
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://piwik.david-reess.de/" : "http://piwik.david-reess.de/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 1);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://piwik.david-reess.de/piwik.php?idsite=1" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+
+</body>
+</html>

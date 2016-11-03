@@ -1,0 +1,22 @@
+{
+	"title": "Cherry Bookmarks",
+
+	"image": 
+		"cherrybookmarks.png",
+
+	"date": 
+		"2013-10-13 21:23",
+		
+	"text": 
+		"Ein Chrome Addon um die persöhnlichen Bookmarks mit Tags und Kategorien zu verwalten.",
+
+	"link": 
+		"https://chrome.google.com/webstore/detail/cherry-bookmarks/onmnaegclpkfdmikoclheajeonnlmoin",
+
+	"technology": 
+		"CSS / SCSS / Compass / HTML / JavaScript / jQuery / Angular / Design / Photoshop",
+
+	"hero": false,
+	"big_project": false
+		
+}

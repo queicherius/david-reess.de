@@ -1,0 +1,22 @@
+{
+	"title": "GW2 Efficiency",
+
+	"image": 
+		"gw2efficiency.png",
+
+	"date": 
+		"2013-11-01 19:17",
+		
+	"text": 
+		"Eine Seite um die Zeitdauer und Effizienz von Dungeons für das Spiel Guild Wars 2 einsichtbar zu machen.",
+
+	"link": 
+		"http://gw2efficiency.com/",
+
+	"technology": 
+		"PHP / Laravel / CSS / SCSS / Compass / HTML / Angular / MySQL / Redis / JavaScript / jQuery / Design / Photoshop",
+
+	"hero": false,
+	"big_project": false
+		
+}

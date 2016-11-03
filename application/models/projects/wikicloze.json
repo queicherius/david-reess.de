@@ -1,0 +1,22 @@
+{
+	"title": "WikiCloze",
+
+	"image": 
+		"51e58c1ba3b36f74300000a0_wikicloze.png",
+
+	"date": 
+		"2013-05-02 19:16",
+
+	"text": 
+		"Eine Art Lückentext-Spiel für Wikipedia, mit garantierter Abfrage von nutzlosem Wissen. (Idee von <a href=\"http://www.reddit.com/r/SomebodyMakeThis/comments/btcjf/smt_softwarewebgame_remember_microsoft_encarta/\" target=\"_blank\">Reddit</a>)",
+
+	"link": 
+		"http://wikicloze.david-reess.de/",
+
+	"technology": 
+		"PHP / MySQL / Laravel / HTML / CSS / LESS / JavaScript / jQuery / Design",
+
+	"hero": false,
+	"big_project": false
+		
+}

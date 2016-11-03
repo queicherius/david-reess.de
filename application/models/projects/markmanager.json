@@ -1,0 +1,22 @@
+{
+	"title": "Notenmanager",
+
+	"image": 
+		"51e697c15b9b789f320001ea_markmanager.png",
+
+	"date": 
+		"2012-12-20 21:43",
+
+	"text": 
+		"Eine flexible, einfache und übersichtliche Notenverwaltung für Schüler.",
+
+	"link": 
+		"http://noten-manager.de",
+
+	"technology": 
+		"PHP / MySQL / HTML / CSS / JavaScript / jQuery / Zend Framework / Photoshop / Design",
+
+	"hero": true,
+	"big_project": true
+		
+}

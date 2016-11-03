@@ -1,0 +1,22 @@
+{
+	"title": "YouTube: Fixed & Filterable",
+
+	"image": 
+		"youtubeaddon.png",
+
+	"date": 
+		"2013-11-22 19:55",
+		
+	"text": 
+		"Ein Chrome Addon um Youtube in ein Kachel-Layout umzuwandeln und die abonnierten Videos zu filtern.",
+
+	"link": 
+		"https://chrome.google.com/webstore/detail/youtube-fixed-filterable/chefgadenjmbjpcaoecdmgdagcjljcmh",
+
+	"technology": 
+		"CSS / SCSS / Compass / HTML / JavaScript / jQuery / Design / Photoshop",
+
+	"hero": false,
+	"big_project": false
+		
+}
