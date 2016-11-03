@@ -1,0 +1,11 @@
+Title: Learn pi
+----
+Date: 01.05.2013
+----
+Project: http://learnpi.david-reess.de/
+----
+Technologies: HTML / CSS / JavaScript / jQuery / Design
+----
+Text: 
+
+Eine minimalistische Website für Leute, die gerne Pi auswendig lernen wollen. (Gewünscht von (link: http://www.reddit.com/r/ideas/comments/1ap88j/a_website_that_helps_you_memorize_pi_by_typing_it/ text:Reddit))

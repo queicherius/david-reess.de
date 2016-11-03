@@ -1,0 +1,11 @@
+Title: GuildWars 2 - Efficiency
+----
+Date: 01.11.2013
+----
+Project: http://gw2efficiency.com/
+----
+Technologies: PHP / Laravel / CSS / SCSS / Compass / HTML / Angular / MySQL / Redis / JavaScript / jQuery / Design / Photoshop
+----
+Text: 
+
+Eine Seite um die Zeitdauer und Effizienz von Dungeons für das Spiel Guild Wars 2 einsichtbar zu machen.

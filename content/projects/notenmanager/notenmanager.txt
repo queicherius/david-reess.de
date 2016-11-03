@@ -1,0 +1,11 @@
+Title: Notenmanager
+----
+Date: 15.12.2012
+----
+Project: http://noten-manager.de/
+----
+Technologies: PHP / MySQL / HTML / CSS / JavaScript / jQuery / Zend Framework / Photoshop / Design
+----
+Text: 
+
+Eine flexible, einfache und übersichtliche Notenverwaltung für Schüler.

@@ -1,0 +1,11 @@
+Title: Karls-Gymnasium
+----
+Date: 22.12.2012
+----
+Project: http://karls-gymnasium.de/
+----
+Technologies: PHP / MySQL / HTML / CSS / Photoshop / Contentdesign
+----
+Text: 
+
+Die Webseite wurde von 2008 bis 2012 betreut und regelmäßig aktualisiert. Außerdem fielen kleinere Programmierarbeiten am Backend, sowie größere am Frontend an.

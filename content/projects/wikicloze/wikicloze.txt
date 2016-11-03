@@ -1,0 +1,11 @@
+Title: Wikicloze
+----
+Date: 02.05.2013
+----
+Project: http://wikicloze.david-reess.de/en
+----
+Technologies: PHP / MySQL / Laravel / HTML / CSS / LESS / JavaScript / jQuery / Design
+----
+Text: 
+
+Eine Art Lückentext-Spiel für Wikipedia, mit garantierter Abfrage von nutzlosem Wissen. (link: http://www.reddit.com/r/SomebodyMakeThis/comments/btcjf/smt_softwarewebgame_remember_microsoft_encarta/ text: Idee von Reddit)

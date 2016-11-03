@@ -1,0 +1,11 @@
+Title: Cherry Bookmarks
+----
+Date: 13.10.2013
+----
+Project: https://chrome.google.com/webstore/detail/cherry-bookmarks/onmnaegclpkfdmikoclheajeonnlmoin
+----
+Technologies: CSS / SCSS / Compass / HTML / JavaScript / jQuery / Angular / Design / Photoshop
+----
+Text: 
+
+Ein Chrome Addon um die persöhnlichen Bookmarks mit Tags und Kategorien zu verwalten.

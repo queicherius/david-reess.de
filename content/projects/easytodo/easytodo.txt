@@ -1,0 +1,11 @@
+Title: Easytodo
+----
+Date: 15.12.2012
+----
+Project: http://easytodo.net/
+----
+Technologies: PHP / MySQL / HTML / CSS / JavaScript / jQuery / Zend Framework / Photoshop / Design
+----
+Text: 
+
+Eine extrem einfache gehaltene, übersichtliche und durch ein Bookmarklet auf jeder Seite einsetzbare TODO-Verwaltung.

@@ -1,0 +1,11 @@
+Title: Humanismus Stuttgart
+----
+Date: 21.12.2012
+----
+Project: http://www.xn--humanismus-wrttemberg-kic.de/
+----
+Technologies: HTML
+----
+Text: 
+
+Die Webseite wurde von mir betreut udn aktualisiert. Dabei wurde keine Änderung des Designs oder der Front-/ Backendprogrammierung gewünscht.

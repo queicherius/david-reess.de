@@ -1,0 +1,11 @@
+Title: Streak!
+----
+Date: 17.05.2014
+----
+Project: http://streak.david-reess.de/
+----
+Technologies: HTML / CSS / Compass / JavaScript / AngularJS / Design
+----
+Text: 
+
+Streak motivates you doing your daily tasks by showing you how many days in a row you kept up the good work.

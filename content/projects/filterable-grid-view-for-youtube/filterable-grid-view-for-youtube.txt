@@ -1,0 +1,11 @@
+Title: Filterable Grid View for YouTube™
+----
+Date: 22.11.2013
+----
+Project: https://chrome.google.com/webstore/detail/youtube-fixed-filterable/chefgadenjmbjpcaoecdmgdagcjljcmh
+----
+Technologies: CSS / SCSS / Compass / HTML / JavaScript / jQuery / Design / Photoshop
+----
+Text: 
+
+Ein Chrome Addon um Youtube in ein Kachel-Layout umzuwandeln und die abonnierten Videos zu filtern.
