@@ -1,153 +1,229 @@
-<?php include("inhalt.php");$site = $_GET["site"];?>
+<?php
 
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html>
-  <head>
-    <title>david-reess.de</title>
-    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    
-  </head>
-  <body>
-  
-  <div id="copy">
-     (c) by David Ree&szlig; 2009
-  </div>
-  
-  <div id="produkte">
-    HTML | PHP | MySQL | CSS | JS | Ajax | Webdesign | Administration
-  </div>
-  
-  <div id="header">
-    david-reess.de
-  </div>
-  
-  <div id="sideline" style="display: none;">
-      <table>
-        
-        <tr>
-          <td><img src="img/inet/email.gif"></td>
-          <td>  </td>
-          <td>&#100;&#97;&#118;&#105;&#100;&#114;&#101;&#101;&#115;&#115;&#64;&#103;&#109;&#120;&#46;&#100;&#101;</td>
-        </tr>
-        
-                
-        
-        <tr>
-          <td><img src="img/inet/icq.gif"></td>
-          <td>  </td>
-          <td><a target="_blank" href="http://people.icq.com/people/about_me.php?uin=410843838">ICQ</a></td>
-       
-        </tr>
-        
-        
-        
-        <tr>
-          <td><img src="img/inet/facebook.gif"></td>
-          <td>  </td>
-          <td><a target="_blank" href="http://www.facebook.com/profile.php?id=1760257998">Facebook</a></td>
-        </tr>
-        
-                
-                <tr>
-          <td><img src="img/inet/tutorials.gif"></td>
-          <td>  </td>
-          <td><a target="_blank" href=" http://www.tutorials.de/forum/members/queicherius.html">Tutorials.de</a></td>
-       
-        </tr>
-        
+function str_cutting($scString,$scMaxlength,$atspace = 1)
+{
+	if (strlen($scString)>$scMaxlength)
+	{
+		$output = "";
+		$scString = substr($scString,0,$scMaxlength-4);
+		if ($atspace && strpos($scString,' '))
+		{
+			$scStrexp = @split(" ",$scString);
+			for ($scI = 0; $scI < count($scStrexp)-1; $scI++) $output.= $scStrexp[$scI]." ";
+		}
+		else
+		$output = $scString;
+		return $output."...";
+	}
+	else
+	return $scString;
+}
 
-                <tr>
-          <td><img src="img/inet/skype.gif"></td>
-          <td>  </td>
-          <td>queicherius</td>
-        </tr>
-        
-        
-        <tr>
-          <td><img src="img/inet/youtube.gif"></td>
-          <td>  </td>
-          <td><a target="_blank" href="http://www.youtube.com/creakjack">Youtube</a></td>
-        </tr>
-                <tr>
-          <td><img src="img/inet/twitter.gif"></td>
-          <td>  </td>
-          <td><a target="_blank" href="http://twitter.com/queicherius">Twitter</a></td>
-        </tr>
-        
-        <tr>
-          <td><img src="img/inet/wordpress.gif"></td>
-          <td>  </td>
-          <td><a target="_blank" href="http://queicherius.wordpress.com/">Blog</a></td>
-        </tr>
+function twitter_call($url, $type='GET')
+{
 
 
-       
-      
-      </table>
-  </div>
-  
-  <div id="logo">
-     <img src="img/logo.gif" alt=""/>
-  </div>
-  
-  <ul class="new_navi">
-    <li><a<?php echo ($site == "home" or $site == "") ? " id=\"active_menu\"" : ""; ?> href="?site=home">Home</a></li>
-      <li><a<?php echo ($site == "portfolio") ? " id=\"active_menu\"" : ""; ?> href="?site=portfolio">Portfolio</a></li>
-      <li><a<?php echo ($site == "produkte") ? " id=\"active_menu\"" : ""; ?> href="?site=produkte">Produkte</a></li>
-      <li><a<?php echo ($site == "scriptarchiv") ? " id=\"active_menu\"" : ""; ?> href="?site=scriptarchiv">Projekte</a></li>
-     <!--  <li><a<?php echo ($site == "gaestebuch") ? " id=\"active_menu\"" : ""; ?>><a href="?site=gaestebuch">G&auml;stebuch</a></li> //-->
-      <li><a<?php echo ($site == "impressum") ? " id=\"active_menu\"" : ""; ?> href="?site=impressum">Impressum</a></li>
-  </ul>
-  
-    
-    <div class="inhalt">   
-   
-<?php 
-
-switch ($site){
+	//cURL Handle erzeugen
+	$ch = curl_init();
 
 
-case "produkte":
-  echo $inhalt["produkte"];
-break;
 
-default:
-case "home":
-  echo $inhalt["home"];
-break;
 
-case "portfolio":
-  echo $inhalt["portfolio"];
-break;
+	curl_setopt($ch, CURLOPT_REFERER, "http://www.google.com/");
+	curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.8) Gecko/2009032609 Firefox/3.0.8');
 
-case "scriptarchiv":
-  echo $inhalt["scriptarchiv"];
-break;
 
-case "downloads":
-  echo $inhalt["downloads"];
-break;
 
-case "kleineprojekte":
-  echo $inhalt["kleineprojekte"];
-break;
+	//Festlegen ob ein GET- oder POST-Request gesendet wird
+	curl_setopt($ch, CURLOPT_CUSTOMREQUEST, $type);
 
-case "gaestebuch":
-  include("guestbook.php");
-break;
+	//URL festlegen
+	curl_setopt($ch, CURLOPT_URL, $url);
 
-case "impressum":
-  echo $inhalt["impressum"];
-break;
+	//Daten als String zurückgeben und nicht direkt an den Browser senden
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+
+	//Login-Informationen setzen
+	curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
+	curl_setopt($ch, CURLOPT_USERPWD, "queicherius:heroz4w0rld");
+
+	//URL aufrufen und XML interpretieren
+	$data = curl_exec($ch);
+
+
+	if(preg_match("#(over capacity)#", $data)){
+		echo "Twitter is over capacity.";
+		return false;
+	}
+
+	if(preg_match("#(rate limit exceeded)#", $data)){
+		echo "Rate limit is exceeded.";
+		return false;
+	}
+
+	if(curl_error($ch)){
+		echo "CURL-ERROR:";
+		var_dump(curl_error($ch));
+		return false;
+	}
+
+
+	$data = @simplexml_load_string($data);
+	//Resourcen freigeben
+	curl_close($ch);
+
+	return $data;
+}
+
+function createGallerie($folder){
+
+	$newfolder = "public/images/".$folder;
+$newfolder2 = URL_PUBLIC.$newfolder;
+	echo '<div class="gallery">';
+
+	$i = 0;
+
+	$handle = opendir($newfolder);
+	while ($file = readdir ($handle)) {
+		if($file != "." && $file != "..") {
+
+			$filewithoutending = explode(".", $file);
+			$filename = $filewithoutending[0];
+			$fileending = $filewithoutending[1];
+
+			if(!preg_match("#([^.]*).((\d*x\d*)|(x\d*)|(\d*x)).(jpg|jpeg|png|gif|wbmp)#", $file)){
+				echo '<a href="'.$newfolder2."/".$file.'" class="floatleft">
+	               <span class="bild"><img src="'.$newfolder2."/".$filename.'.148x.'.$fileending.'"/></span>
+	              <!-- <span class="title">Die Mona Lisa in W&uuml;rfeln</span> -->
+	            </a>';
+
+						$i++;
+
+				if($i == 4){
+					echo '<br class="clear">';
+					$i = 0;
+				}
+
+
+			}
+		}
+	}
+	closedir($handle);
+
+	echo  '<br class="clear" /></div>';
+
 
 }
 
-?>
-    
-    
-    </div>
-    
-    
-  </body>
-</html>
+
+
+/**
+ * Wolf CMS - Content Management Simplified. <http://www.wolfcms.org>
+ * Copyright (C) 2009 Martijn van der Kleijn <martijn.niji@gmail.com>
+ * Copyright (C) 2008 Philippe Archambault <philippe.archambault@gmail.com>
+ *
+ * This file is part of Wolf CMS.
+ *
+ * Wolf CMS is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * Wolf CMS is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with Wolf CMS.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ * Wolf CMS has made an exception to the GNU General Public License for plugins.
+ * See exception.txt for details and the full text.
+ */
+
+//  Constants  ---------------------------------------------------------------
+
+define('CMS_ROOT', dirname(__FILE__));
+define('FROG_ROOT', CMS_ROOT); // DEFINED ONLY FOR BACKWARDS SUPPORT - to be taken out before 0.9.0
+define('CORE_ROOT', CMS_ROOT.'/wolf');
+define('PLUGINS_ROOT', CORE_ROOT.'/plugins');
+
+define('APP_PATH', CORE_ROOT.'/app');
+
+require_once(CORE_ROOT.'/utils.php');
+
+$config_file = CMS_ROOT.'/config.php';
+
+require_once($config_file);
+
+// if you have installed wolf and see this line, you can comment it or delete it :)
+if ( ! defined('DEBUG')) { header('Location: install/'); exit(); }
+
+// Figure out what the public URI is based on URL_PUBLIC.
+// TODO - improve
+$changedurl = str_replace('//','|',URL_PUBLIC);
+$lastslash = strpos($changedurl, '/');
+if (false === $lastslash) {
+	define('URI_PUBLIC', '/');
+}
+else {
+	define('URI_PUBLIC', substr($changedurl, $lastslash));
+}
+
+// Security checks -----------------------------------------------------------
+if (DEBUG == false && isWritable($config_file)) {
+	// Windows systems always have writable config files... skip those.
+	if (substr(PHP_OS, 0, 3) != 'WIN') {
+		echo '<html><head><title>Wolf CMS automatically disabled!</title></head><body>';
+		echo '<h1>Wolf CMS automatically disabled!</h1>';
+		echo '<p>Wolf CMS has been disabled as a security precaution.</p>';
+		echo '<p><strong>Reason:</strong> the configuration file was found to be writable.</p>';
+		echo '</body></html>';
+		exit();
+	}
+}
+
+//  Init  --------------------------------------------------------------------
+
+define('BASE_URL', URL_PUBLIC . (endsWith(URL_PUBLIC, '/') ? '': '/') . (USE_MOD_REWRITE ? '': '?'));
+
+require CORE_ROOT.'/Framework.php';
+
+try {
+	$__CMS_CONN__ = new PDO(DB_DSN, DB_USER, DB_PASS);
+}
+catch (PDOException $error) {
+	die('DB Connection failed: '.$error->getMessage());
+}
+
+if ($__CMS_CONN__->getAttribute(PDO::ATTR_DRIVER_NAME) == 'mysql')
+$__CMS_CONN__->setAttribute(PDO::MYSQL_ATTR_USE_BUFFERED_QUERY, true);
+
+// DEFINED ONLY FOR BACKWARDS SUPPORT - to be taken out before 0.9.0
+$__FROG_CONN__ = $__CMS_CONN__;
+
+Record::connection($__CMS_CONN__);
+Record::getConnection()->exec("set names 'utf8'");
+
+Setting::init();
+
+use_helper('I18n');
+I18n::setLocale(Setting::get('language'));
+
+// Only add the cron web bug when necessary
+if (defined('USE_POORMANSCRON') && USE_POORMANSCRON && defined('POORMANSCRON_INTERVAL')) {
+	Observer::observe('page_before_execute_layout', 'run_cron');
+
+	function run_cron() {
+		$cron = Cron::findByIdFrom('Cron', '1');
+		$now = time();
+		$last = $cron->getLastRunTime();
+
+		if ($now - $last > POORMANSCRON_INTERVAL) {
+			echo $cron->generateWebBug();
+		}
+	}
+}
+
+// run everything!
+require APP_PATH.'/main.php';
