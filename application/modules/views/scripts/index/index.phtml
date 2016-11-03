@@ -1,0 +1,70 @@
+<?php
+
+if(count($this->articles) == 0){
+    echo '<h4>Keine Artikel vorhanden</h4>';
+}else{
+
+?>
+
+			    <?php
+
+			    $action = Zend_Controller_Front::getInstance()->getRequest()->getActionName();
+                if($action == 'index'){
+
+			    ?>
+
+<div class="index_greeting">
+    <h1>Hallo!</h1>
+    <div class="index_text">Mein Name ist David Reeß. Ich erstelle Websiten und Webapplikationen und liebe es zu Programmieren. Meine Fähigkeiten beinhalten die bedeutendsten Websprachen, vorbildliche Arbeitsweisen und eine gute Portion Webdesign.<br>Wenn Sie ein Projekt haben, bei dem ich helfen kann, <a href="/impressum">kontaktieren Sie mich.</a></div>
+    <div class="clear"></div>
+</div>
+
+<?php } ?>
+
+<ul class="content blog">
+
+<?php
+
+foreach($this->articles as $article):
+
+$timestamp = strtotime($article['timestamp']);
+
+?>
+    <li>
+        <div class="leftbar">
+			<span class="date">
+				<span class=""><?php echo date('d', $timestamp); ?>/<?php echo date('m', $timestamp); ?></span>
+				<span class="year"><?php echo date('Y', $timestamp); ?></span>
+			</span>
+			<span class="time"><?php echo date('H', $timestamp); ?>:<?php echo date('i', $timestamp); ?></span>
+			<ul class="tags">
+                <?php
+
+                $tags = explode(',', $article['tag_list']);
+
+                foreach($tags as $tag):
+
+                ?>
+                <li><a href="/tag/<?php echo strtolower($this->EscapeHtml($tag)); ?>"><?php echo $this->EscapeHtml($tag); ?></a>
+                <?php endforeach; ?>
+			</ul>
+		</div>
+
+		<div class="text">
+
+		    <?php if($article['title'] != NULL){ ?>
+
+			<h1 class="title"><?php echo $this->EscapeHtml($article['title']); ?></h1>
+
+			<?php } ?>
+
+			<?php echo str_replace("<img ", '<img alt="" ', $article['content']); ?>
+
+		</div>
+		<div class="clear"></div>
+    </li>
+<?php endforeach; ?>
+
+</ul>
+
+<?php } ?>

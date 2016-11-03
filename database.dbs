@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="MySql" database="MySql" >
+	<schema name="david-reess" catalogname="david-reess" defo="y" >
+		<table name="article" >
+			<column name="id" type="INT" jt="4" mandatory="y" unsigned="y" autoincrement="y" />
+			<column name="title" type="VARCHAR" length="100" jt="12" />
+			<column name="content" type="TEXT" jt="-1" mandatory="y" />
+			<column name="timestamp" type="DATETIME" jt="93" mandatory="y" />
+			<index name="pk_article" unique="PRIMARY_KEY" >
+				<column name="id" />
+			</index>
+		</table>
+		<table name="tag" >
+			<column name="id" type="INT" jt="4" mandatory="y" unsigned="y" autoincrement="y" />
+			<column name="name" type="VARCHAR" length="100" jt="12" mandatory="y" />
+			<index name="pk_tag" unique="PRIMARY_KEY" >
+				<column name="id" />
+			</index>
+		</table>
+		<table name="article_tags" >
+			<column name="id" type="INT" jt="4" mandatory="y" unsigned="y" autoincrement="y" />
+			<column name="article_id" type="INT" jt="4" mandatory="y" unsigned="y" />
+			<column name="tag_id" type="INT" jt="4" mandatory="y" unsigned="y" />
+			<index name="pk_article_tags" unique="PRIMARY_KEY" >
+				<column name="id" />
+			</index>
+			<index name="idx_article_tags" unique="NORMAL" >
+				<column name="tag_id" />
+			</index>
+			<index name="idx_article_tags_0" unique="NORMAL" >
+				<column name="article_id" />
+			</index>
+			<fk name="fk_article_tags" to_schema="david-reess" to_table="tag" delete_action="CASCADE" >
+				<fk_column name="tag_id" pk="id" />
+			</fk>
+			<fk name="fk_article_tags_0" to_schema="david-reess" to_table="article" delete_action="CASCADE" >
+				<fk_column name="article_id" pk="id" />
+			</fk>
+		</table>
+	</schema>
+	<connector name="MySql" database="MySql" driver_class="com.mysql.jdbc.Driver" driver_jar="mysql-connector-java-5.1.20-bin.jar" host="localhost" port="3306" instance="david-reess" user="root" schema_mapping="" />
+	<layout name="Default" show_relation_columns="y" >
+		<entity schema="david-reess" name="tag" x="406" y="42" />
+		<entity schema="david-reess" name="article" x="42" y="42" />
+		<entity schema="david-reess" name="article_tags" x="224" y="42" />
+	</layout>
+</project>

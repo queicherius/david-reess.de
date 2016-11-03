@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>David Reeß</title>
+    <link href="/css/reset.css" rel="stylesheet" type="text/css" >
+    <link href="/css/application.css" rel="stylesheet" type="text/css" >
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/img/favicon.png">
+</head>
+<body>
+
+<!--
+
+TODO:
+
+- links
+- lightbox
+- tagliste
+- kontakt
+- link in author
+
+ -->
+
+<div class="all_wrapper">
+
+	<div class="top">
+
+		<div class="logo">
+			<span class="name"><a href="/"><span class="forename">David</span> Reess</a></span>
+			<span class="professions">PHP / MYSQL / HTML / CSS / JAVASCRIPT / WEBDESIGN / PHOTOSHOP</span>
+		</div>
+
+		<div class="tags">
+			<ul>
+
+			    <?php
+
+			    $action = Zend_Controller_Front::getInstance()->getRequest()->getActionName();
+                $tag = Zend_Controller_Front::getInstance()->getRequest()->getParam('tag');
+
+			    ?>
+
+				<li class="<?php if($action == 'tag' and $tag == 'portfolio') echo 'active'; ?>"><a href="/tag/portfolio">Portfolio</a></li>
+				<li class="<?php if($action == 'tag' and $tag == 'projekte') echo 'active'; ?>"><a href="/tag/projekte">Projekte</a></li>
+				<li class="<?php if($action == 'tag' and $tag == 'testimonials') echo 'active'; ?>"><a href="/tag/testimonials">Testimonials</a></li>
+				<li class="<?php if($action == 'tag' and $tag == 'kunst') echo 'active'; ?>"><a href="/tag/kunst">Kunst</a></li>
+				<li class="<?php if($action == 'tag' and $tag == 'blog') echo 'active'; ?>"><a href="/tag/blog">Blog</a></li>
+				<li class="<?php if($action == 'tag' and $tag == 'links') echo 'active'; ?>"><a href="/tag/links">Links</a></li>
+				<li class="last <?php if($action == 'impressum') echo 'active'; ?>"><a href="/impressum">Kontakt & Impr.</a></li>
+
+			</ul>
+		</div>
+
+	</div>
+
+	<div class="clear padder"></div>
+
+	<?php
+
+	echo $this->layout()->content;
+
+	?>
+
+	<div class="clear"></div>
+
+</div>
+
+</body>
+</html>
