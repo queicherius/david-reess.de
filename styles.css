@@ -32,12 +32,38 @@ a {
   box-shadow: inset 0 -1px 0 0 #2B2B2B, inset 0 -2px 0 0 #A5C25C;
 }
 
+/* Section behaviour */
+
+@media (min-width: 1400px) {
+  html, body {
+    height: calc(100% - 32px - 16px);
+  }
+
+  body {
+    display: flex;
+    justify-content: middle;
+  }
+
+  .section-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    column-count: 2;
+  }
+
+  section {
+    width: 50%;
+    margin-bottom: 16px;
+  }
+}
+
 /* Headings */
 
 h1 {
   font-size: 14px;
   color: #FFC66D;
-  margin-top: 32px;
   margin-bottom: 16px;
   font-weight: normal;
 }
@@ -48,10 +74,6 @@ h1:before {
 
 h1:after {
   content: ' */';
-}
-
-h1.first {
-  margin-top: 0;
 }
 
 /* Text */
@@ -91,7 +113,7 @@ li:before {
 
 /* Mobile */
 
-@media (max-device-width: 700px) {
+@media (max-width: 700px) {
   p, ul, .project-description {
     margin-left: 0px;
   }
