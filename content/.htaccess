@@ -1,6 +1,0 @@
-<IfModule mod_rewrite.c>
-
-RewriteEngine on
-RewriteRule \.txt$ /error [R=301,L]
-
-</IfModule>
