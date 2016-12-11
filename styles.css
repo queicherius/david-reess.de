@@ -1,15 +1,28 @@
+/* Reset browser styles */
+
 * {
   margin: 0;
   padding: 0;
 }
 
+ul, li {
+  list-style: none;
+}
+
+/* Generic styles */
+
 body {
   font-family: "Source Code Pro", sans-serif;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 20px;
   color: #A9B7C6;
   background-color: #2B2B2B;
   padding: 32px 25px 16px 25px;
+}
+
+strong {
+  font-weight: normal;
+  color: #CC7832;
 }
 
 a {
@@ -18,6 +31,8 @@ a {
   text-shadow: 1px 1px 0 #2B2B2B, -1px 1px 0 #2B2B2B, 2px 0 0 #2B2B2B, -2px 0 0 #2B2B2B;
   box-shadow: inset 0 -1px 0 0 #2B2B2B, inset 0 -2px 0 0 #A5C25C;
 }
+
+/* Headings */
 
 h2 {
   font-size: 14px;
@@ -39,6 +54,8 @@ h2.first {
   margin-top: 0;
 }
 
+/* Text */
+
 p {
   margin-left: 25px;
   margin-top: 16px;
@@ -51,19 +68,33 @@ p {
 }
 
 .comment, .project-description {
-    color: #808080;
+  color: #808080;
 }
 
 p.no-textbreak {
   max-width: inherit;
 }
 
-@media (max-device-width: 425px) {
-  p {
-  margin-left: 0px;
+/* Lists */
+
+ul {
+  margin-left: 25px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
-  .project-description {
-  margin-left: 0px;
+li:before {
+  content: '- ';
 }
+
+/* Mobile */
+
+@media (max-device-width: 700px) {
+  p, ul, .project-description {
+    margin-left: 0px;
+  }
+
+  ul.big-list li {
+    margin-bottom: 16px;
+  }
 }
