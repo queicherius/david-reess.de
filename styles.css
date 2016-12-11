@@ -34,7 +34,7 @@ a {
 
 /* Headings */
 
-h2 {
+h1 {
   font-size: 14px;
   color: #FFC66D;
   margin-top: 32px;
@@ -42,15 +42,15 @@ h2 {
   font-weight: normal;
 }
 
-h2:before {
+h1:before {
   content: '/* ';
 }
 
-h2:after {
+h1:after {
   content: ' */';
 }
 
-h2.first {
+h1.first {
   margin-top: 0;
 }
 
@@ -63,16 +63,18 @@ p {
   max-width: 560px;
 }
 
-.project-description {
-  margin-left: 50px;
-}
+/* "Comment"-style texts */
 
-.comment, .project-description {
+.comment {
   color: #808080;
 }
 
-p.no-textbreak {
-  max-width: inherit;
+.comment:before {
+  content: '[';
+}
+
+.comment:after {
+  content: ']';
 }
 
 /* Lists */
