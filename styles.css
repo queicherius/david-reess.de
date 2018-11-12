@@ -12,24 +12,22 @@ ul, li {
 /* Generic styles */
 
 body {
-  font-family: "Source Code Pro", sans-serif;
+  font-family: "Source Code Pro", monospace;
   font-size: 14px;
   line-height: 20px;
-  color: #A9B7C6;
+  color: #c6d5e4;
   background-color: #2B2B2B;
   padding: 32px 25px 16px 25px;
 }
 
 strong {
   font-weight: normal;
-  color: #CC7832;
+  color: #D88332;
 }
 
 a {
   color: #A5C25C;
-  text-decoration: none;
-  text-shadow: 1px 1px 0 #2B2B2B, -1px 1px 0 #2B2B2B, 2px 0 0 #2B2B2B, -2px 0 0 #2B2B2B;
-  box-shadow: inset 0 -1px 0 0 #2B2B2B, inset 0 -2px 0 0 #A5C25C;
+  text-decoration: underline;
 }
 
 /* Section behaviour */
@@ -41,7 +39,7 @@ a {
 
   body {
     display: flex;
-    justify-content: middle;
+    justify-content: center;
   }
 
   .section-wrapper {
@@ -88,7 +86,7 @@ p {
 /* "Comment"-style texts */
 
 .comment {
-  color: #808080;
+  color: #999999;
 }
 
 .comment:before {
@@ -115,7 +113,7 @@ li:before {
 
 @media (max-width: 700px) {
   p, ul, .project-description {
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   ul.big-list li {
