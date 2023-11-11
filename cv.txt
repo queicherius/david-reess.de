@@ -6,6 +6,8 @@
 
 - Email: david@devoxa.io
 
+
+
   Professional Summary  
 ------------------------
 
@@ -17,6 +19,8 @@
 - Passionate about programming since age 7
 - Notable achievements in various projects, including a companion site for Guild Wars 2 with over 650.000 registered users
 
+
+
   Professional Experience  
 ---------------------------
 
@@ -26,6 +30,7 @@ Verein zur Förderung der Papierrestaurierung Stuttgart (2010-present)
 - Significantly reduced server costs by 95% and enhanced user engagement
 - Technologies: HTML, CSS, NodeJS, JavaScript, TypeScript
 
+
 gw2efficiency (2013-present)
 
 - Designed and developed a widely used companion site for the MMORPG Guild Wars 2
@@ -33,11 +38,13 @@ gw2efficiency (2013-present)
 - Over 650,000 registered users, and handling over 1 billion database rows
 - Technologies: HTML, CSS, JavaScript, TypeScript, React, Angular, MongoDB, NodeJS, Redis, Docker, Kubernetes, Playwright
 
+
 anythinx GmbH (2014)
 
 - Took over front and backend development for a personalized news and data aggregator project
 - Involved web crawling and converting diverse web data into a unified format, and real-time alert functionalities
 - Technologies: HTML, CSS, PHP, MySQL
+
 
 Thingylabs GmbH (2016-present)
 
@@ -47,6 +54,7 @@ Thingylabs GmbH (2016-present)
 - Role spanned across design, testing, frontend, backend, and orchestration
 - Technologies: HTML, CSS, JavaScript, TypeScript, React, MongoDB, Postgres, NodeJS, Redis, Docker, Kubernetes, Cypress, Playwright
 
+
 Devoxa Limited (2021-present)
 
 - Solo-founded Devoxa Limited and undertook significant projects for multiple clients in the web sector
@@ -54,6 +62,8 @@ Devoxa Limited (2021-present)
 - Designed and developed an architecture resilient to high-traffic bursts, with peaks of 30 million requests in 15 minutes
 - Developed a real-time transaction processing layer for all NFTs on all major blockchains
 - Technologies: HTML, CSS, TypeScript, React, NextJS, NodeJS, Redis, Postgres, NestJS, Docker, Kubernetes
+
+
 
   Education  
 -------------
@@ -63,6 +73,8 @@ Bachelor of Computer Science, Hochschule der Medien, Stuttgart, 2017
 - Specialization on web development
 - Additional modules in cyber security, AI, UI/UX design and testing
 - Thesis in Peer-to-Peer Distributed Computing
+
+
 
   Skills  
 ----------
@@ -84,7 +96,11 @@ Bachelor of Computer Science, Hochschule der Medien, Stuttgart, 2017
 - CI/CD: Expert in Github CI/CD;
     proficient in Jenkins
 
+
+
   Open-Source Work
 --------------------
 
 - Github: https://github.com/queicherius, https://github.com/devoxa
+
+
