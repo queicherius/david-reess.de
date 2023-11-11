@@ -7,62 +7,59 @@
 - Email: david@devoxa.io
 
 
-
   Professional Summary  
 ------------------------
 
-- Full-stack web developer
+- Principal full-stack engineer with 10+ years experience
 - Bachelor of Computer Science from Hochschule der Medien, Stuttgart
 - Bilingual proficiency in German and English
-- Extensive experience in designing, programming, and managing web applications
-- Expertise in NodeJS, React, JavaScript/TypeScript, PostgreSQL, and familiar with a wide range of other technologies
+- Extensive experience in designing, developing, and managing web applications
+- Expert in JavaScript/TypeScript, NodeJS, React, PostgreSQL, and familiar with a wide range of other technologies
 - Passionate about programming since age 7
-- Notable achievements in various projects, including a companion site for Guild Wars 2 with over 650.000 registered users
+- Notable achievements in various projects, including a companion site for Guild Wars 2 with 650K+ registered users
 
+
+  Open-Source Work  
+--------------------
+
+- Dedicated to contributing high-quality code to the open-source community
+- Github: https://github.com/queicherius, https://github.com/devoxa
 
 
   Professional Experience  
 ---------------------------
 
-Verein zur Förderung der Papierrestaurierung Stuttgart (2010-present)
-
-- Executed a comprehensive rewrite of the club's website into a static page
-- Significantly reduced server costs by 95% and enhanced user engagement
-- Technologies: HTML, CSS, NodeJS, JavaScript, TypeScript
-
-
-gw2efficiency (2013-present)
-
-- Designed and developed a widely used companion site for the MMORPG Guild Wars 2
-- Allows players to access in-game data like inventory and achievements and provides historical statistical data
-- Over 650,000 registered users, and handling over 1 billion database rows
-- Technologies: HTML, CSS, JavaScript, TypeScript, React, Angular, MongoDB, NodeJS, Redis, Docker, Kubernetes, Playwright
-
-
-anythinx GmbH (2014)
-
-- Took over front and backend development for a personalized news and data aggregator project
-- Involved web crawling and converting diverse web data into a unified format, and real-time alert functionalities
-- Technologies: HTML, CSS, PHP, MySQL
-
-
-Thingylabs GmbH (2016-present)
-
-- Co-founded Thingylabs GmbH, a bespoke web development agency, as the CTO
-- Supported Bosch Engineering GmbH for the "Pantaris" project, a cloud-based platform targeting the automotive sector
-- Evolved the initial prototype into a fully functional production system and beyond
-- Role spanned across design, testing, frontend, backend, and orchestration
-- Technologies: HTML, CSS, JavaScript, TypeScript, React, MongoDB, Postgres, NodeJS, Redis, Docker, Kubernetes, Cypress, Playwright
-
-
 Devoxa Limited (2021-present)
 
 - Solo-founded Devoxa Limited and undertook significant projects for multiple clients in the web sector
-- Developed and integrated a webshop with a bespoke ERP/CRM platform
 - Designed and developed an architecture resilient to high-traffic bursts, with peaks of 30 million requests in 15 minutes
-- Developed a real-time transaction processing layer for all NFTs on all major blockchains
+- Architected and developed a real-time transaction processing layer for all major blockchains
+- Developed a bespoke webshop and integrated it with a ERP/CRM platform
 - Technologies: HTML, CSS, TypeScript, React, NextJS, NodeJS, Redis, Postgres, NestJS, Docker, Kubernetes
 
+Thingylabs GmbH (2016-present)
+
+- Co-founded Thingylabs GmbH, a web development agency, as the CTO
+- Worked full-time as the primary Principal Engineer for the "Pantaris" project from Bosch Engineering GmbH (2016-2023)
+- Cloud-based platform with focus on the development and deployment of automotive software
+- Evolved the initial prototype with a team of 6 into a fully functional production system and beyond with a team of 100+
+- Role spanned across design, testing, frontend, backend, architecture and orchestration with main focus on and responsibility for critical platform features
+- Designed and developed a design system for consistent styling of the platform and all external applications
+- Architected and implemented a ground-up redesign of the API, optimizing it for internal and external use, and improving test coverage, security and performance
+- Designed and implemented a fine-grained permission system that passed extensive external penetration tests
+- Designed and developed a bespoke query language that allowed for targeted search of all resources and relations via the API
+- Technologies: HTML, CSS, JavaScript, TypeScript, React, MongoDB, Postgres, NodeJS, Redis, Docker, Kubernetes, Cypress, Playwright
+
+gw2efficiency (2013-present)
+
+- Designed, developed and operated a companion site for the MMORPG Guild Wars 2, used by 40% of it's active player base
+- Allows players to access all available in-game data like inventories and achievements from their browser
+- Optimizes gameplay by calculating the most efficient way to achieve certain goals
+- Provides insight into historical data changes on the individual player level
+- Built a bespoke queue system to regularly snapshot and process player's accounts
+- Handling 1B+ total database rows, 500K+ queue jobs per day and 25M+ API requests per day
+- 150M+ page views, 650K+ registered users, $5,000+ MRR through advertisements and premium subscriptions
+- Technologies: HTML, CSS, JavaScript, TypeScript, React, Angular, MongoDB, NodeJS, Redis, Docker, Kubernetes, Playwright
 
 
   Education  
@@ -72,8 +69,8 @@ Bachelor of Computer Science, Hochschule der Medien, Stuttgart, 2017
 
 - Specialization on web development
 - Additional modules in cyber security, AI, UI/UX design and testing
-- Thesis in Peer-to-Peer Distributed Computing
-
+- Internship at anythinx GmbH and Bosch Engineering GmbH with focus on large-scale web crawling and data aggregation
+- Thesis on Peer-to-Peer Distributed Computing
 
 
   Skills  
@@ -83,7 +80,7 @@ Bachelor of Computer Science, Hochschule der Medien, Stuttgart, 2017
     proficient in Python, Ruby, Bash;
     familiar with Rust, Go, Java, C++, C#
 - Software Testing: Expert in Cypress, Playwright, Jest
-- Frameworks: Expert in React, Laravel, Symphony, Angular, ExpressJS, NestJS, NextJS;
+- Frameworks: Expert in React, NextJS, ExpressJS, NestJS, Laravel, Angular;
     proficient in Vue.js, Svelte
 - Databases: Expert in Postgres, MySQL, Redis, MongoDB;
     proficient in InfluxDB, MQTT
@@ -95,12 +92,4 @@ Bachelor of Computer Science, Hochschule der Medien, Stuttgart, 2017
     familiar with iOS, Android, Flutter
 - CI/CD: Expert in Github CI/CD;
     proficient in Jenkins
-
-
-
-  Open-Source Work  
---------------------
-
-- Github: https://github.com/queicherius, https://github.com/devoxa
-
 
