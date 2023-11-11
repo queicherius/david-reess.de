@@ -20,26 +20,26 @@
   Professional Experience  
 ---------------------------
 
-**Verein zur Förderung der Papierrestaurierung Stuttgart (2010-present)**
+Verein zur Förderung der Papierrestaurierung Stuttgart (2010-present)
 
 - Executed a comprehensive rewrite of the club's website into a static page
 - Significantly reduced server costs by 95% and enhanced user engagement
 - Technologies: HTML, CSS, NodeJS, JavaScript, TypeScript
 
-**gw2efficiency (2013-present)**
+gw2efficiency (2013-present)
 
 - Designed and developed a widely used companion site for the MMORPG Guild Wars 2
 - Allows players to access in-game data like inventory and achievements and provides historical statistical data
 - Over 650,000 registered users, and handling over 1 billion database rows
 - Technologies: HTML, CSS, JavaScript, TypeScript, React, Angular, MongoDB, NodeJS, Redis, Docker, Kubernetes, Playwright
 
-**anythinx GmbH (2014)**
+anythinx GmbH (2014)
 
 - Took over front and backend development for a personalized news and data aggregator project
 - Involved web crawling and converting diverse web data into a unified format, and real-time alert functionalities
 - Technologies: HTML, CSS, PHP, MySQL
 
-**Thingylabs GmbH (2016-present)**
+Thingylabs GmbH (2016-present)
 
 - Co-founded Thingylabs GmbH, a bespoke web development agency, as the CTO
 - Supported Bosch Engineering GmbH for the "Pantaris" project, a cloud-based platform targeting the automotive sector
@@ -47,7 +47,7 @@
 - Role spanned across design, testing, frontend, backend, and orchestration
 - Technologies: HTML, CSS, JavaScript, TypeScript, React, MongoDB, Postgres, NodeJS, Redis, Docker, Kubernetes, Cypress, Playwright
 
-**Devoxa Limited (2021-present)**
+Devoxa Limited (2021-present)
 
 - Solo-founded Devoxa Limited and undertook significant projects for multiple clients in the web sector
 - Developed and integrated a webshop with a bespoke ERP/CRM platform
@@ -58,7 +58,7 @@
   Education  
 -------------
 
-**Bachelor of Computer Science, Hochschule der Medien, Stuttgart, 2017**
+Bachelor of Computer Science, Hochschule der Medien, Stuttgart, 2017
 
 - Specialization on web development
 - Additional modules in cyber security, AI, UI/UX design and testing
@@ -67,21 +67,21 @@
   Skills  
 ----------
 
-- **Languages:** Expert in JavaScript, TypeScript, CSS, HTML, PHP;
+- Languages: Expert in JavaScript, TypeScript, CSS, HTML, PHP;
     proficient in Python, Ruby, Bash;
     familiar with Rust, Go, Java, C++, C#
-- **Software Testing:** Expert in Cypress, Playwright, Jest
-- **Frameworks:** Expert in React, Laravel, Symphony, Angular, ExpressJS, NestJS, NextJS;
+- Software Testing: Expert in Cypress, Playwright, Jest
+- Frameworks: Expert in React, Laravel, Symphony, Angular, ExpressJS, NestJS, NextJS;
     proficient in Vue.js, Svelte
-- **Databases:** Expert in Postgres, MySQL, Redis, MongoDB;
+- Databases: Expert in Postgres, MySQL, Redis, MongoDB;
     proficient in InfluxDB, MQTT
-- **Tooling:** Expert in NPM, Git, Linux;
+- Tooling: Expert in NPM, Git, Linux;
     proficient in Puppet, Ansible
-- **Cloud Development:** Expert in Docker, Kubernetes, Serverless, OpenTelemetry;
+- Cloud Development: Expert in Docker, Kubernetes, Serverless, OpenTelemetry;
     proficient in AWS, Azure, Google Cloud
-- **Mobile Development:** Expert in PWA;
+- Mobile Development: Expert in PWA;
     familiar with iOS, Android, Flutter
-- **CI/CD:** Expert in Github CI/CD;
+- CI/CD: Expert in Github CI/CD;
     proficient in Jenkins
 
   Open-Source Work
