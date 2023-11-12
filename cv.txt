@@ -34,7 +34,7 @@ Devoxa Limited (2021-present)
 - Solo-founded Devoxa Limited and undertook significant projects for multiple clients in the web sector
 - Designed and developed an architecture resilient to high-traffic bursts, with peaks of 30 million requests in 15 minutes
 - Architected and developed a real-time transaction processing layer for all major blockchains
-- Developed a bespoke webshop and integrated it with a ERP/CRM platform
+- Developed a custom e-commerce layer for client's in-house ERP/CRM platform
 - Technologies: HTML, CSS, TypeScript, React, NextJS, NodeJS, Redis, Postgres, NestJS, Docker, Kubernetes
 
 Thingylabs GmbH (2016-present)
@@ -47,7 +47,7 @@ Thingylabs GmbH (2016-present)
 - Designed and developed a design system for consistent styling of the platform and all external applications
 - Architected and implemented a ground-up redesign of the API, optimizing it for internal and external use, and improving test coverage, security and performance
 - Designed and implemented a fine-grained permission system that passed extensive external penetration tests
-- Designed and developed a bespoke query language that allowed for targeted search of all resources and relations via the API
+- Designed and developed a query language that allowed for targeted search of all resources and relations via the API
 - Technologies: HTML, CSS, JavaScript, TypeScript, React, MongoDB, Postgres, NodeJS, Redis, Docker, Kubernetes, Cypress, Playwright
 
 gw2efficiency (2013-present)
@@ -56,7 +56,7 @@ gw2efficiency (2013-present)
 - Allows players to access all available in-game data like inventories and achievements from their browser
 - Optimizes gameplay by calculating the most efficient way to achieve certain goals
 - Provides insight into historical data changes on the individual player level
-- Built a bespoke queue system to regularly snapshot and process player's accounts
+- Built a fault-resistant queue system to regularly snapshot and process player's accounts
 - Handling 1B+ total database rows, 500K+ queue jobs per day and 25M+ API requests per day
 - 150M+ page views, 650K+ registered users, $5,000+ MRR through advertisements and premium subscriptions
 - Technologies: HTML, CSS, JavaScript, TypeScript, React, Angular, MongoDB, NodeJS, Redis, Docker, Kubernetes, Playwright
