@@ -33,6 +33,7 @@ Devoxa Limited (2021-present)
 
 - Solo-founded Devoxa Limited and undertook significant projects for multiple clients in the web sector
 - Designed and developed an architecture to absorb high-traffic bursts at the edge, with peaks of 30 million requests in 15 minutes
+- Engineered and rolled out a company-wide monitoring and observability solution based on OpenTelemetry
 - Architected and developed a real-time transaction processing layer for all major blockchains
 - Developed a custom e-commerce layer for client's in-house ERP/CRM platform
 - Technologies: HTML, CSS, TypeScript, React, NextJS, NodeJS, Redis, Postgres, NestJS, Docker, Kubernetes
