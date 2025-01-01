@@ -14,9 +14,9 @@
 - Bachelor of Computer Science from Hochschule der Medien, Stuttgart
 - Bilingual proficiency in German and English
 - Extensive experience in designing, developing, and managing web applications
-- Expert in JavaScript/TypeScript, NodeJS, React, PostgreSQL, and familiar with a wide range of other technologies
+- Expert in TypeScript/JavaScript, NodeJS, React, PostgreSQL, and familiar with a wide range of other technologies
 - Passionate about programming since age 7
-- Notable achievements in various projects, including a companion site for Guild Wars 2 with 650K+ registered users
+- Notable achievements in various projects, including a companion site for Guild Wars 2 with 750K+ registered users
 
 
   Open-Source Work  
@@ -32,13 +32,13 @@
 Devoxa Limited (2021-present)
 
 - Solo-founded Devoxa Limited and undertook significant projects for multiple clients in the web sector
-- Designed and developed an architecture to absorb high-traffic bursts at the edge, with peaks of 30 million requests in 15 minutes
+- Designed and developed an architecture to absorb high-traffic bursts at the edge, with peaks of 30 million requests per 15 minutes
 - Engineered and rolled out a company-wide monitoring and observability solution based on OpenTelemetry
 - Architected and developed a real-time transaction processing layer for all major blockchains
 - Developed a custom e-commerce layer for client's in-house ERP/CRM platform
-- Technologies: HTML, CSS, TypeScript, React, NextJS, NodeJS, Redis, Postgres, NestJS, Docker, Kubernetes
+- Technologies: HTML, CSS, TypeScript, React, NextJS, NodeJS, Redis, Postgres, NestJS, GraphQL, TRPC, Docker, Kubernetes
 
-Thingylabs GmbH (2016-present)
+Thingylabs GmbH (2016-2024)
 
 - Co-founded Thingylabs GmbH, a web development agency, as the CTO
 - Worked full-time as the primary Principal Engineer for the "Pantaris" project from Bosch Engineering GmbH (2016-2023)
@@ -59,7 +59,7 @@ gw2efficiency (2013-present)
 - Provides insight into historical data changes on the individual player level
 - Built a fault-resistant queue system to regularly snapshot and process player's accounts
 - Handling 1B+ total database rows, 500K+ queue jobs per day and 25M+ API requests per day
-- 150M+ page views, 650K+ registered users, $5,000+ MRR through advertisements and premium subscriptions
+- 200M+ page views, 750K+ registered users, $5,000+ MRR through advertisements and premium subscriptions
 - Technologies: HTML, CSS, JavaScript, TypeScript, React, Angular, MongoDB, NodeJS, Redis, Docker, Kubernetes, Playwright
 
 
@@ -77,11 +77,11 @@ Bachelor of Computer Science, Hochschule der Medien, Stuttgart, 2017
   Skills  
 ----------
 
-- Languages: Expert in JavaScript, TypeScript, CSS, HTML, PHP;
+- Languages: Expert in TypeScript, JavaScript, HTML, CSS, PHP;
     proficient in Python, Ruby, Bash;
     familiar with Rust, Go, Java, C++, C#
-- Software Testing: Expert in Cypress, Playwright, Jest
-- Frameworks: Expert in React, NextJS, ExpressJS, NestJS, Laravel, Angular;
+- Software Testing: Expert in Jest, Playwright, Cypress
+- Frameworks: Expert in React, NextJS, ExpressJS, NestJS, GraphQL, TRPC, Laravel, Angular;
     proficient in Vue.js, Svelte
 - Databases: Expert in Postgres, MySQL, Redis, MongoDB;
     proficient in InfluxDB, MQTT
