@@ -81,7 +81,7 @@ Bachelor of Computer Science, Hochschule der Medien, Stuttgart, 2017
     proficient in Python, Ruby, Bash;
     familiar with Rust, Go, Java, C++, C#
 - Software Testing: Expert in Jest, Playwright, Cypress
-- Frameworks: Expert in React, NextJS, ExpressJS, NestJS, GraphQL, TRPC, Laravel, Angular;
+- Frameworks: Expert in React, NextJS, ExpressJS, NestJS, GraphQL, TRPC, Laravel, AngularJS;
     proficient in Vue.js, Svelte
 - Databases: Expert in Postgres, MySQL, Redis, MongoDB;
     proficient in InfluxDB, MQTT
@@ -93,4 +93,3 @@ Bachelor of Computer Science, Hochschule der Medien, Stuttgart, 2017
     familiar with iOS, Android, Flutter
 - CI/CD: Expert in Github CI/CD;
     proficient in Jenkins
-
