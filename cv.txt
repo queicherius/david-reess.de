@@ -32,11 +32,13 @@
 Devoxa Limited (2021-present)
 
 - Solo-founded Devoxa Limited and undertook significant projects for multiple clients in the web sector
-- Designed and developed an architecture to absorb high-traffic bursts at the edge, with peaks of 30 million requests per 15 minutes
+- Built a DSL-to-SQL translation pipeline, enabling metrics querying at scale
+- Improved a large-scale alerting system with automatic source discovery and per-series incident tracking
+- Designed and developed an architecture to absorb high-traffic bursts at the edge, with peaks of 2 million requests per minute
 - Engineered and rolled out a company-wide monitoring and observability solution based on OpenTelemetry
 - Architected and developed a real-time transaction processing layer for all major blockchains
 - Developed a custom e-commerce layer for client's in-house ERP/CRM platform
-- Technologies: HTML, CSS, TypeScript, React, NextJS, NodeJS, Redis, Postgres, NestJS, GraphQL, TRPC, Docker, Kubernetes
+- Technologies: HTML, CSS, TypeScript, Ruby on Rails, Vue.js, React, NextJS, NodeJS, Redis, Postgres, ClickHouse, NestJS, GraphQL, TRPC, Docker, Kubernetes
 
 Thingylabs GmbH (2016-2024)
 
@@ -58,9 +60,9 @@ gw2efficiency (2013-present)
 - Optimizes gameplay by calculating the most efficient way to achieve certain goals
 - Provides insight into historical data changes on the individual player level
 - Built a fault-resistant queue system to regularly snapshot and process player's accounts
-- Handling 1B+ total database rows, 500K+ queue jobs per day and 25M+ API requests per day
-- 200M+ page views, 750K+ registered users, $5,000+ MRR through advertisements and premium subscriptions
-- Technologies: HTML, CSS, JavaScript, TypeScript, React, Angular, MongoDB, NodeJS, Redis, Docker, Kubernetes, Playwright
+- Handling 1.3B+ total database rows, 500K+ queue jobs per day and 25M+ API requests per day
+- 220M+ page views, 750K+ registered users, $5,000+ MRR through advertisements and premium subscriptions
+- Technologies: HTML, CSS, JavaScript, TypeScript, React, AngularJS, MongoDB, NodeJS, Redis, Docker, Kubernetes, Playwright
 
 
   Education  
@@ -77,13 +79,13 @@ Bachelor of Computer Science, Hochschule der Medien, Stuttgart, 2017
   Skills  
 ----------
 
-- Languages: Expert in TypeScript, JavaScript, HTML, CSS, PHP;
-    proficient in Python, Ruby, Bash;
+- Languages: Expert in TypeScript, JavaScript, Ruby, HTML, CSS, PHP;
+    proficient in Python, Bash;
     familiar with Rust, Go, Java, C++, C#
 - Software Testing: Expert in Jest, Playwright, Cypress
-- Frameworks: Expert in React, NextJS, ExpressJS, NestJS, GraphQL, TRPC, Laravel, AngularJS;
-    proficient in Vue.js, Svelte
-- Databases: Expert in Postgres, MySQL, Redis, MongoDB;
+- Frameworks: Expert in React, NextJS, ExpressJS, NestJS, Ruby on Rails, GraphQL, TRPC, Laravel, AngularJS, Vue.js,;
+    proficient in Svelte
+- Databases: Expert in Postgres, MySQL, Redis, MongoDB, ClickHouse;
     proficient in InfluxDB, MQTT
 - Tooling: Expert in NPM, Git, Linux;
     proficient in Puppet, Ansible
